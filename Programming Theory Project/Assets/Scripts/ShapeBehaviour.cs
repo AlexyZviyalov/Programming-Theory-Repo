@@ -6,6 +6,8 @@ public class ShapeBehaviour : MonoBehaviour
 {
     Ray ray;
     RaycastHit hit;
+    public float speedMovement = 270f;
+    public float zCoordDifference = 2.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,12 @@ public class ShapeBehaviour : MonoBehaviour
     void Update()
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        DetectTheClick();
+        
+    }
+
+    void DetectTheClick()
+    {
         if (Physics.Raycast(ray, out hit))
         {
             if (Input.GetMouseButtonDown(0))
@@ -23,18 +31,14 @@ public class ShapeBehaviour : MonoBehaviour
                 if (hit.collider.name == gameObject.name)
                 {
                     MoveClickedObject();
-                    Debug.Log("hit" + hit.collider.name);
                 }
-                //Debug.Log(hit.collider.name);
-                //Debug.Log("hit");
-                //transform.position += Vector3.forward * Time.deltaTime;
+
             }
         }
-        
     }
 
-    void MoveClickedObject()
+    public virtual void MoveClickedObject()
     {
-        transform.position += Vector3.forward * Time.deltaTime * 5;
+        transform.position += new Vector3(0, 0, DistanseBetweenCubes.Instance.ZDistanceBetweenCubes());
     }
 }
