@@ -20,13 +20,21 @@ public class ShapeBehaviour : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log(hit.collider.name);
-                Debug.Log("hit");
-                transform.position += Vector3.forward * Time.deltaTime;
+                if (hit.collider.name == gameObject.name)
+                {
+                    MoveClickedObject();
+                    Debug.Log("hit" + hit.collider.name);
+                }
+                //Debug.Log(hit.collider.name);
+                //Debug.Log("hit");
+                //transform.position += Vector3.forward * Time.deltaTime;
             }
         }
+        
+    }
 
-        
-        
-}
+    void MoveClickedObject()
+    {
+        transform.position += Vector3.forward * Time.deltaTime * 5;
+    }
 }
