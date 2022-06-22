@@ -20,7 +20,7 @@ public class ShapeBehaviour : MonoBehaviour
         DetectTheClick();
         
     }
-
+    //ABSTRACTION
     void DetectTheClick()
     {
         if (Physics.Raycast(ray, out hit))
@@ -35,6 +35,7 @@ public class ShapeBehaviour : MonoBehaviour
             }
         }
     }
+    //ABSTRACTION
 
     public virtual void MoveClickedObject()
     {

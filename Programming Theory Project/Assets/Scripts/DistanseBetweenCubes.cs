@@ -22,14 +22,14 @@ public class DistanseBetweenCubes : MonoBehaviour
         Instance = this;
     }
 
-    
+    //ABSTRACTION
     public float ZDistanceBetweenCubes()
     {
         zDifference = cubeA1.transform.position - cubeB1.transform.position;
         zDistance = zDifference.z;
         return zDistance;
     }
-
+    //ABSTRACTION
     public float XDistanceBetweenCubes()
     {
         xDifference = cubeA1.transform.position - cubeA2.transform.position;
