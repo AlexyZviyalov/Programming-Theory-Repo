@@ -7,7 +7,7 @@ public class RedCapsule : ShapeBehaviour
 
     public override void MoveClickedObject()
     {
-        transform.position += new Vector3(0, 0, (DistanseBetweenCubes.Instance.ZDistanceBetweenCubes())*2);
+        transform.position += new Vector3((DistanseBetweenCubes.Instance.ZDistanceBetweenCubes()) * -1,0,0);
     }
 
     //// Start is called before the first frame update

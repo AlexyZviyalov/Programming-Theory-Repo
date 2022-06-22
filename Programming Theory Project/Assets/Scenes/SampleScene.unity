@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 142083673}
   - component: {fileID: 142083672}
   - component: {fileID: 142083676}
+  - component: {fileID: 142083677}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -226,13 +227,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142083671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e165122791f945ad8e42acc47c8d6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMovement: 20
-  zCoordDifference: 2.5
+--- !u!114 &142083677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142083671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb98aeda2f70946cd9a7b9923dbf7918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &254253218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,8 +2114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e165122791f945ad8e42acc47c8d6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMovement: 20
-  zCoordDifference: 2.5
 --- !u!114 &1950246964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2117,8 +2126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e00a70e0dd514d04af20650a2893e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMovement: 270
-  zCoordDifference: 2.5
 --- !u!1 &1983710311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,5 +2331,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e165122791f945ad8e42acc47c8d6bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMovement: 20
-  zCoordDifference: 2.5

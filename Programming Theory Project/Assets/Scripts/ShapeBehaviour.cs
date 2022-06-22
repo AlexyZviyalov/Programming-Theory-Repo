@@ -6,8 +6,7 @@ public class ShapeBehaviour : MonoBehaviour
 {
     Ray ray;
     RaycastHit hit;
-    public float speedMovement = 270f;
-    public float zCoordDifference = 2.5f;
+   
     // Start is called before the first frame update
     void Start()
     {
