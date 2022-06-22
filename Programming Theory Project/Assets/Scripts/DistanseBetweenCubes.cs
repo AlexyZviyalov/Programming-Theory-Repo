@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DistanseBetweenCubes : MonoBehaviour
 {
-    public static DistanseBetweenCubes Instance;
+    //INCAPSULATION
+    public static DistanseBetweenCubes Instance { get; private set; }
 
     public GameObject cubeA1;
     public GameObject cubeA2;
